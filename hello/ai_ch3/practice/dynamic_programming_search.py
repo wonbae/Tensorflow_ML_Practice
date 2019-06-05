@@ -2,6 +2,7 @@ import util
 
 _X_ = None
 
+
 class DynamicProgrammingSearch(util.SearchAlgorithm):
     def __init__(self, memory_use=True, verbose=0):
         self.memory_use = memory_use
@@ -11,7 +12,8 @@ class DynamicProgrammingSearch(util.SearchAlgorithm):
         
     def future(self, problem, state):
         if self.memory_use and state in self.future_dict:
-            actions, cost, _ = _X_  # use self.future_dict
+            print(self.future_dict)
+            actions, cost, _ = self.future_dict[state]  # use self.future_dict
             return actions, cost, 0
 
         num_visited = 1
@@ -22,9 +24,9 @@ class DynamicProgrammingSearch(util.SearchAlgorithm):
             min_cost = float('inf')
             min_actions = None
             for action, successor, action_cost in problem.succ_and_cost(state):
-                future_actions, future_cost, future_num_visited = self.future(problem, _X_)
+                future_actions, future_cost, future_num_visited = self.future(problem, successor)
                 num_visited += future_num_visited
-                cost = _X_
+                cost = action_cost + future_cost
                 if cost < min_cost:
                     min_actions = future_actions.cons(action)
                     min_cost = cost

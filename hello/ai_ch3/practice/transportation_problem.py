@@ -38,13 +38,13 @@ if __name__ == '__main__':
     problem = TransportationProblem(7)
 
     import backtracking_search
-    bts = backtracking_search.BacktrackingSearch(verbose=3)
-    print(bts.solve(problem))
+    # bts = backtracking_search.BacktrackingSearch(verbose=3)
+    # print(bts.solve(problem))
 
-    # import dynamic_programming_search
-    # dps = dynamic_programming_search.DynamicProgrammingSearch(verbose=1)
+    import dynamic_programming_search
+    dps = dynamic_programming_search.DynamicProgrammingSearch(verbose=1)
     # dps = dynamic_programming_search.DynamicProgrammingSearch(memory_use=False, verbose=1)
-    # print(dps.solve(problem))
+    print(dps.solve(problem))
 
 
 

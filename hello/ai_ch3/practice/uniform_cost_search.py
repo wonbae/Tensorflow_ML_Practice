@@ -1,15 +1,17 @@
 import util
 
+
 class UniformCostSearch(util.SearchAlgorithm):
     def __init__(self, verbose=0):
         self.verbose = verbose
 
     def solve(self, problem):
+
         numStatesExplored = 0
 
         # Initialize data structures
         frontier = util.PriorityQueue()  # Frontier states
-        explored = set() # Explored states
+        explored = set()  # Explored states
         backpointers = {}  # map state to (action, previous state)
         frontier.update(problem.start_state(), 0)
 

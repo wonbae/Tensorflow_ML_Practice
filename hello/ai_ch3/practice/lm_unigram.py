@@ -26,5 +26,5 @@ def unigram(word):
 # Printing results
 print('\n- Unigram probabilities - ')
 print(('P(Sam) = %f'%unigram('Sam')))
-print(('P(I) = %f'%unigram('I')))
+print(('P(do | I) = %f'%unigram('I')))
 print(('P(green) = %f'%unigram('green')))
