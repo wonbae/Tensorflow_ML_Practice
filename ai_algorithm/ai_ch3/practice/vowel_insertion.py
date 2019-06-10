@@ -3,7 +3,6 @@ import wordsegUtil
 
 _X_ = None
 
-
 class VowelInsertionProblem(util.SearchProblem):
     def __init__(self, queryWords, bigramCost, possibleFills):
         self.queryWords = queryWords
@@ -19,10 +18,10 @@ class VowelInsertionProblem(util.SearchProblem):
     def succ_and_cost(self, state):
         pos, prev_word = state
         vowel_removed_word = self.queryWords[pos]
-        fills = self.possibleFills(vowel_removed_word) | {vowel_removed_word}  # Set 을 합치는것
+        fills = self.possibleFills(vowel_removed_word) | {vowel_removed_word}
         for fill in fills:
-            next_state = pos + 1
-            cost = self.bigramCost(prev_word, fill)     # -log P(fill | prev_word)
+            next_state = pos + 1, fill
+            cost = self.bigramCost(prev_word, fill)  # -log P(fill | prev_word)
             yield fill, next_state, cost  # return action, state, cost
 
 

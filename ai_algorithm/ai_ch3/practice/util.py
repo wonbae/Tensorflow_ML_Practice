@@ -26,8 +26,6 @@ class SearchAlgorithm:
     def solve(self, problem): raise NotImplementedError("Override me")
 
 # Data structure for supporting uniform cost search.
-
-
 class PriorityQueue:
     def  __init__(self):
         self.heap = []

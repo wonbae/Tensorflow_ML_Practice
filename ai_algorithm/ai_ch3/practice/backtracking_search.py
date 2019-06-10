@@ -2,7 +2,6 @@ import util
 
 _X_ = None
 
-
 class BacktrackingSearch(util.SearchAlgorithm):
     def __init__(self, verbose=0):
         self.verbose = verbose

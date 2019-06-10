@@ -3,7 +3,6 @@ import wordsegUtil
 
 _X_ = None
 
-
 class SegmentationProblem(util.SearchProblem):
     def __init__(self, query, unigramCost):
         self.query = query
@@ -18,8 +17,8 @@ class SegmentationProblem(util.SearchProblem):
     def succ_and_cost(self, state):
         for step in range(1, len(self.query) - state + 1):
             next_state = state + step
-            word = self.query[state:next_state]
-            cost = self.unigramCost(word)
+            word = self.query[state: next_state]
+            cost = self.unigramCost(word)  # -log P(word)
             yield word, next_state, cost  # action, next_state, cost
 
 

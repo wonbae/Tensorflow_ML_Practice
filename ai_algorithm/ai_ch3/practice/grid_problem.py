@@ -108,7 +108,7 @@ if __name__ == '__main__':
 
     problem.use_heuristic = True
     path, totalCostWithHeuristic, numStatesExplored = ucs.solve(problem)
-    originalTotalCost = totalCostWithHeuristic + _X_
+    originalTotalCost = totalCostWithHeuristic + problem.heuristic((0, 0))
 
     assert totalCost == originalTotalCost
     print('Original total cost = {}'.format(originalTotalCost))

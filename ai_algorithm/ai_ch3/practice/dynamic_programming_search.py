@@ -2,7 +2,6 @@ import util
 
 _X_ = None
 
-
 class DynamicProgrammingSearch(util.SearchAlgorithm):
     def __init__(self, memory_use=True, verbose=0):
         self.memory_use = memory_use
@@ -12,7 +11,6 @@ class DynamicProgrammingSearch(util.SearchAlgorithm):
         
     def future(self, problem, state):
         if self.memory_use and state in self.future_dict:
-            print(self.future_dict)
             actions, cost, _ = self.future_dict[state]  # use self.future_dict
             return actions, cost, 0
 

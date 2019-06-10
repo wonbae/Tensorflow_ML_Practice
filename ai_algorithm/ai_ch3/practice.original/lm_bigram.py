@@ -28,7 +28,7 @@ def bigram(prev_word, curr_word):
 
 # Printing results
 print('\n- Bigram probabilities - ')
-print(('P(-BEGIN-, I) = %f'%bigram(SENTENCE_BEGIN, 'I')))    
-print(('P(-BEGIN-, Sam) = %f'%bigram(SENTENCE_BEGIN, 'Sam')))    
-print(('P(I, do) = %f'%bigram('I', 'do')))
-print(('P(like, green) = %f'%bigram('like', 'green')))
+print(('P(I | -BEGIN-) = %f'%bigram(SENTENCE_BEGIN, 'I')))    
+print(('P(Sam | -BEGIN-) = %f'%bigram(SENTENCE_BEGIN, 'Sam')))    
+print(('P(do | I) = %f'%bigram('I', 'do')))
+print(('green | like) = %f'%bigram('like', 'green')))

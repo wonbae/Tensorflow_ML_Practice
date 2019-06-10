@@ -2,9 +2,7 @@ import util
 
 _X_ = None
 
-
 class TransportationProblem(util.SearchProblem):
-
     def __init__(self, end_state):
         self.end_state = end_state
 
@@ -25,7 +23,7 @@ class TransportationProblem(util.SearchProblem):
             results.append((action, next_state, cost))
             
         # Tram action
-        if (state * 2) <= self.end_state:
+        if (2 * state) <= self.end_state:
             next_state = 2 * state
             action = 'Tram'
             cost = 2
@@ -37,7 +35,7 @@ class TransportationProblem(util.SearchProblem):
 if __name__ == '__main__':
     problem = TransportationProblem(7)
 
-    import backtracking_search
+    # import backtracking_search
     # bts = backtracking_search.BacktrackingSearch(verbose=3)
     # print(bts.solve(problem))
 
@@ -46,10 +44,6 @@ if __name__ == '__main__':
     # dps = dynamic_programming_search.DynamicProgrammingSearch(memory_use=False, verbose=1)
     print(dps.solve(problem))
 
-
-
-    import uniform_cost_search
+    # import uniform_cost_search
     # ucs = uniform_cost_search.UniformCostSearch(verbose=3)
-
     # print(ucs.solve(problem))
-
