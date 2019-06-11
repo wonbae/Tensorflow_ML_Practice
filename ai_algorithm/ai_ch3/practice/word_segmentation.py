@@ -3,6 +3,7 @@ import wordsegUtil
 
 _X_ = None
 
+
 class SegmentationProblem(util.SearchProblem):
     def __init__(self, query, unigramCost):
         self.query = query

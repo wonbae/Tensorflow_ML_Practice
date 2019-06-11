@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c209c91-4ab6-4733-8b25-09c6a0c71260" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/lecture/.~lock.AI_CH3_강의자료.odp#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/lecture/AI_CH3_강의자료.odp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice.original/lm_bigram.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice.original/lm_bigram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GNN/simpleGAN-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../GNN/simpleGAN-Copy1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/backtracking_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/backtracking_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/dynamic_programming_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/dynamic_programming_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/grid_problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/grid_problem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/lm_bigram.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/lm_bigram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/lm_unigram.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/lm_unigram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/transportation_problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/transportation_problem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/uniform_cost_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/uniform_cost_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/joint_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/joint_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/vowel_insertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/vowel_insertion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ai_ch3/practice/word_segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ai_ch3/practice/word_segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lecture/.~lock.AI_CH4_강의자료.pptx#" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,9 +77,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="y" value="24" />
+    <option name="width" value="928" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -110,6 +102,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -166,7 +159,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />

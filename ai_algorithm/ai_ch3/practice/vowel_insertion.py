@@ -3,6 +3,7 @@ import wordsegUtil
 
 _X_ = None
 
+
 class VowelInsertionProblem(util.SearchProblem):
     def __init__(self, queryWords, bigramCost, possibleFills):
         self.queryWords = queryWords
@@ -23,6 +24,7 @@ class VowelInsertionProblem(util.SearchProblem):
             next_state = pos + 1, fill
             cost = self.bigramCost(prev_word, fill)  # -log P(fill | prev_word)
             yield fill, next_state, cost  # return action, state, cost
+
 
 
 if __name__ == '__main__':    
